@@ -1,0 +1,31 @@
+{
+  "name": "xcode-theme",
+  "displayName": "Xcode Theme",
+  "description": "Xcode’s themes, ported to VS Code",
+  "license": "MIT",
+  "publisher": "akidon0000",
+  "repository": {
+    "url": "https://github.com/akidon0000/xcode-theme-for-vscode"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Xcode 11 Default Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Xcode 11 Default Dark-color-theme.json"
+      },
+      {
+        "label": "Xcode 11 Default Light",
+        "uiTheme": "vs",
+        "path": "./themes/Xcode 11 Default Light-color-theme.json"
+      }
+    ]
+  }
+}
