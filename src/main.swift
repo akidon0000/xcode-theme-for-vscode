@@ -33,70 +33,72 @@ struct UiPalette {
     let textFieldBg: UInt32
     let textFieldPlaceholderFg: UInt32
 
+    // Xcode 16 Enhanced Dark Theme
     static let dark = UiPalette(
-        fg: 0xDDDDDE,
+        fg: 0xF2F2F7,           // より明るく読みやすい前景色
         lightFg: 0xFFFFFF,
         darkBorder: 0x000000,
-        lightBorder: 0x36373B,
-        focusBorder: 0x427EA9,
-        statusFg: 0x9A9A9C,
-        statusBg: 0x202124,
-        sidebarBg: 0x26282B,
-        panelBg: 0x1E2023,
-        inactiveActivitybarFg: 0xA6A7A9,
+        lightBorder: 0x3A3A3C,  // より細やかな境界線
+        focusBorder: 0x007AFF,  // Appleの標準ブルー
+        statusFg: 0xA6A6A8,     // 改善されたコントラスト
+        statusBg: 0x1C1C1E,     // より深いダーク
+        sidebarBg: 0x2C2C2E,    // 統一感のあるサイドバー
+        panelBg: 0x1C1C1E,      // パネルの背景を統一
+        inactiveActivitybarFg: 0xA6A6A8,
         activeActivitybarFg: 0x007AFF,
-        inactiveTitlebarFg: 0x686A6D,
-        activeTitlebarFg: 0xEBEBEB,
-        inactiveTitlebarBg: 0x27292C,
-        activeTitlebarBg: 0x37383B,
-        toolbarBg: 0x202125,
-        activeTabBg: 0x335274,
-        unfocusedActiveTabBg: 0x283F5A,
+        inactiveTitlebarFg: 0x8E8E93,
+        activeTitlebarFg: 0xF2F2F7,
+        inactiveTitlebarBg: 0x2C2C2E,
+        activeTitlebarBg: 0x3A3A3C,
+        toolbarBg: 0x1C1C1E,
+        activeTabBg: 0x007AFF,  // 統一されたアクティブカラー
+        unfocusedActiveTabBg: 0x3A3A3C,
         activeTabFg: 0xFFFFFF,
-        lineNumbers: 0x747478,
-        activeLineNumber: 0xE0E0E1,
-        selection: 0x3F638B,
-        activeListBg: 0x1658BE,
+        lineNumbers: 0x8E8E93,
+        activeLineNumber: 0xF2F2F7,
+        selection: 0x0A84FF,    // より明るい選択色
+        activeListBg: 0x007AFF,
         filteredListFg: 0xFFFFFF,
         activeFilteredListFg: 0xFFFFFF,
-        suggestFg: (0xFFFFFF, 0xBB),
-        activeSuggestFg: (0xFFFFFF, 0xBB),
-        suggestBg: 0x1E2023,
-        textFieldBg: 0x1E1E1E,
-        textFieldPlaceholderFg: 0x727272
+        suggestFg: (0xF2F2F7, 0xCC),
+        activeSuggestFg: (0xFFFFFF, 0xFF),
+        suggestBg: 0x2C2C2E,
+        textFieldBg: 0x1C1C1E,
+        textFieldPlaceholderFg: 0x8E8E93
     )
 
+    // Xcode 16 Enhanced Light Theme
     static let light = UiPalette(
-        fg: 0x272727,
-        lightFg: 0x363636,
-        darkBorder: 0xDEDEDE,
-        lightBorder: 0xE6E6E6,
-        focusBorder: 0x8DB4FC,
-        statusFg: 0x808080,
+        fg: 0x1D1D1F,           // より深い読みやすい前景色
+        lightFg: 0x000000,
+        darkBorder: 0xD1D1D6,   // より柔らかい境界線
+        lightBorder: 0xE5E5EA,
+        focusBorder: 0x007AFF,  // 統一されたフォーカスカラー
+        statusFg: 0x8E8E93,
         statusBg: 0xFFFFFF,
-        sidebarBg: 0xE2E1E2,
-        panelBg: 0xEEEEEE,
-        inactiveActivitybarFg: 0x636263,
-        activeActivitybarFg: 0x0070F5,
-        inactiveTitlebarFg: 0xA8A8A8,
-        activeTitlebarFg: 0x4A4A4A,
-        inactiveTitlebarBg: 0xE8E8E8,
-        activeTitlebarBg: 0xF5F4F4,
+        sidebarBg: 0xF2F2F7,    // より現代的なサイドバー
+        panelBg: 0xF9F9FB,      // 微妙なトーン差
+        inactiveActivitybarFg: 0x8E8E93,
+        activeActivitybarFg: 0x007AFF,
+        inactiveTitlebarFg: 0xA6A6A8,
+        activeTitlebarFg: 0x1D1D1F,
+        inactiveTitlebarBg: 0xF2F2F7,
+        activeTitlebarBg: 0xFFFFFF,
         toolbarBg: 0xFFFFFF,
-        activeTabBg: 0xD2E7FF,
-        unfocusedActiveTabBg: 0xE8F3FF,
-        activeTabFg: 0x007AFF,
-        lineNumbers: 0xA6A6A6,
-        activeLineNumber: 0x232426,
-        selection: 0xB3D7FF,
-        activeListBg: 0x59A2FF,
-        filteredListFg: 0x000000,
+        activeTabBg: 0x007AFF,
+        unfocusedActiveTabBg: 0xE5E5EA,
+        activeTabFg: 0xFFFFFF,
+        lineNumbers: 0xA6A6A8,
+        activeLineNumber: 0x1D1D1F,
+        selection: 0x0A84FF,
+        activeListBg: 0x007AFF,
+        filteredListFg: 0x1D1D1F,
         activeFilteredListFg: 0xFFFFFF,
-        suggestFg: (0x3F3F3F, 0xFF),
-        activeSuggestFg: (0xFFFFFF, 0xCC),
-        suggestBg: 0xE9E8E8,
+        suggestFg: (0x1D1D1F, 0xFF),
+        activeSuggestFg: (0xFFFFFF, 0xFF),
+        suggestBg: 0xF2F2F7,
         textFieldBg: 0xFFFFFF,
-        textFieldPlaceholderFg: 0xC0C0C0
+        textFieldPlaceholderFg: 0xA6A6A8
     )
 }
 
@@ -129,64 +131,66 @@ struct EditorPalette {
     let removed: UInt32
     let unresolvedReference: UInt32
 
+    // Xcode 16 Enhanced Dark Editor Theme
     static let xcodeDefaultDark = EditorPalette(
-        fg: (0xFFFFFF, UInt8(0.85 * 255.0)),
-        bg: 0x292A30,
-        selection: 0x646F83,
-        cursor: 0xFFFFFF,
-        currentLineBg: 0x2F3239,
-        invisibles: 0x53606E,
-        comments: 0x7F8C98,
-        strings: 0xFF8170,
-        characters: 0xD9C97C,
-        numbers: 0xD9C97C,
-        keywords: 0xFF7AB2,
-        preprocessorStatements: 0xFFA14F,
-        typeDeclarations: 0x6BDFFF,
-        otherDeclarations: 0x4EB0CC,
-        projectTypes: 0xACF2E4,
-        libraryTypes: 0xDABAFF,
-        projectFunctions: 0x78C2B3,
-        libraryFunctions: 0xB281EB,
-        projectConstants: 0x78C2B3,
-        libraryConstants: 0xB281EB,
-        projectProperties: 0x78C2B3,
-        libraryProperties: 0xB281EB,
-        projectMacros: 0xFFA14F,
-        libraryMacros: 0xFFA14F,
-        added: 0xACF2E4,
-        removed: 0xFF8170,
-        unresolvedReference: 0xF32C2C
+        fg: (0xF2F2F7, UInt8(0.9 * 255.0)),  // より明るく読みやすい
+        bg: 0x1C1C1E,                        // より深いダークな背景
+        selection: 0x3A3A3C,                 // より統一された選択色
+        cursor: 0xF2F2F7,
+        currentLineBg: 0x2C2C2E,             // より目立たない現在行
+        invisibles: 0x48484A,
+        comments: 0x8E8E93,                  // より読みやすいコメント
+        strings: 0xFF6B6B,                   // より鮮やかな文字列
+        characters: 0xFFD60A,                // より明るい文字定数
+        numbers: 0xFFD60A,
+        keywords: 0xFF375F,                  // より鮮やかなキーワード
+        preprocessorStatements: 0xFF9F0A,
+        typeDeclarations: 0x5AC8FA,
+        otherDeclarations: 0x64D2FF,
+        projectTypes: 0x67DA10,              // より鮮やかなグリーン
+        libraryTypes: 0xBF5AF2,
+        projectFunctions: 0x6AC4DC,
+        libraryFunctions: 0xB084EB,
+        projectConstants: 0x6AC4DC,
+        libraryConstants: 0xB084EB,
+        projectProperties: 0x6AC4DC,
+        libraryProperties: 0xB084EB,
+        projectMacros: 0xFF9F0A,
+        libraryMacros: 0xFF9F0A,
+        added: 0x30D158,                     // より明確な追加色
+        removed: 0xFF3B30,                   // より明確な削除色
+        unresolvedReference: 0xFF453A
     )
 
+    // Xcode 16 Enhanced Light Editor Theme
     static let xcodeDefaultLight = EditorPalette(
-        fg: (0x000000, 255),
+        fg: (0x1D1D1F, 255),                 // より深い前景色
         bg: 0xFFFFFF,
-        selection: 0xB2D7FF,
-        cursor: 0x000000,
-        currentLineBg: 0xECF5FF,
-        invisibles: 0xD6D6D6,
-        comments: 0x707F8C,
-        strings: 0xD12F1B,
-        characters: 0x272AD8,
-        numbers: 0x272AD8,
+        selection: 0xB7E5FF,                 // より優しい選択色
+        cursor: 0x1D1D1F,
+        currentLineBg: 0xF5F5F7,             // より微妙な現在行
+        invisibles: 0xD1D1D6,
+        comments: 0x8E8E93,
+        strings: 0xD70015,                   // より鮮やかな赤
+        characters: 0x1D77EF,                // より深いブルー
+        numbers: 0x1D77EF,
         keywords: 0xAD3DA4,
-        preprocessorStatements: 0x78492A,
-        typeDeclarations: 0x02638C,
-        otherDeclarations: 0x057CB0,
-        projectTypes: 0x23575C,
-        libraryTypes: 0x4B21B0,
-        projectFunctions: 0x3E8087,
+        preprocessorStatements: 0x804000,
+        typeDeclarations: 0x0058A0,
+        otherDeclarations: 0x0073C7,
+        projectTypes: 0x248A3D,              // より深いグリーン
+        libraryTypes: 0x5856D6,
+        projectFunctions: 0x0F68A0,
         libraryFunctions: 0x804FB8,
-        projectConstants: 0x3E8087,
+        projectConstants: 0x0F68A0,
         libraryConstants: 0x804FB8,
-        projectProperties: 0x3E8087,
+        projectProperties: 0x0F68A0,
         libraryProperties: 0x804FB8,
-        projectMacros: 0x78492A,
-        libraryMacros: 0x78492A,
-        added: 0x3E8087,
-        removed: 0xD12F1B,
-        unresolvedReference: 0xE21615
+        projectMacros: 0x804000,
+        libraryMacros: 0x804000,
+        added: 0x28CD41,                     // より鮮やかな緑
+        removed: 0xFF3333,                   // より鮮やかな赤
+        unresolvedReference: 0xFF1744
     )
 }
 
@@ -360,7 +364,7 @@ func main() throws {
     // Generate Dark Theme
     let darkBuilder = ThemeBuilder()
     generateUIColors(builder: darkBuilder, palette: UiPalette.dark)
-    generateEditorColors(builder: darkBuilder, palette: EditorPalette.xcodDefaultDark)
+    generateEditorColors(builder: darkBuilder, palette: EditorPalette.xcodeDefaultDark)
     let darkTheme = darkBuilder.build(name: "Xcode Default Dark")
     try saveTheme(darkTheme, filename: "Xcode Default Dark-color-theme.json")
 
